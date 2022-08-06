@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai1_lab9</title>
+    <style>
+        body {
+            width: 400px;
+            margin: auto;
+            border: 2px solid sienna;
+            border-radius: 3px;
+            background-image: url(images/back.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .form {
+            background-color:  oldlace;
+            padding: 5px;
+        }
+
+        p {
+            padding-left: 15px;
+        }
+
+        .abc {
+            height: 18px;
+            width: 250px;
+        }
+
+        h2 {
+            color: tomato;
+            text-shadow: 1px 1px 1px orangered;
+            text-align: center;
+        }
+
+        .b {
+            text-align: center;
+        }
+
+        .b>.c {
+            color: blue;
+            font-size: 18px;
+        }
+
+        .b>.c:hover {
+            color: red;
+            text-decoration: underline;
+            font-size: 19px;
+        }
+
+        form {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="xuly.php" method="POST" class="form">
+        <h2>Đăng nhập</h2>
+        <p> User Name:<br>
+            <input type="text" name="User Name" class="abc">
+        </p>
+        <p> Password:<br>
+            <input type="password" name="Password" class="abc">
+        </p>
+        <p>
+            <input type="checkbox" name="Remember me?"> Remember me?
+        </p>
+        <hr>
+        <div class="b">
+            <input type="submit" value="Đăng nhập" class="c">
+        </div>
+    </form>
+</body>
+
+</html>

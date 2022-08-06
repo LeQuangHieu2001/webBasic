@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai2_lab9</title>
+    <style>
+        body{
+            width: 550px;
+            margin: auto;
+            border: 2px solid sienna;
+            border-radius: 3px;
+            background-image: url(images/back.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        .abc{
+            padding: 5px;
+            background-color: oldlace;
+        }
+        h2{
+            color: tomato;
+            text-shadow: 1px 1px 1px orangered;
+            text-align: center;
+        }
+        .ten{
+            width: 250px;
+            height: 15px;
+            padding: 2px;
+        }
+        .a{
+            width: 450px;
+        }
+        .b{
+            text-align: center;
+        }
+        .b > .c{
+            color:blue;    
+            font-size: 18px;
+        }
+        .b > .c:hover{
+            color: red;
+            text-decoration: underline;
+            font-size: 19px;
+        }
+        form{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <form action="xuly.php" method="POST" class="abc">
+        <h2>Đăng kí thành viên</h2>
+        <p>
+            Họ tên:<br>
+            <input type="text" name="hoten" class="ten">
+        </p>
+        <p>
+        Giới tính:
+            <input type="radio" name="gt">Nam
+            <input type="radio" name="gt">Nữ
+        </p>
+        <p>
+        Hình ảnh:
+            <input type="file" name="hinh">
+        </p>
+        <p>
+        Quốc tịch
+            <select name="quoctich">
+                <option value="1">Việt Nam</option>
+                <option value="2">Mỹ</option>
+                <option value="3">Lào</option>
+                <option value="4">Campuchia</option>
+            </select>
+        </p>
+        Ghi chú:<br>
+            <textarea name="ghichu" rows="5" class="a" ></textarea>
+            <hr>
+            <div class="b">
+            <input type="submit" value="Đăng ký" class="c">
+            <input type="reset" value="Nhập lại" class="c">
+            </div>
+        </p>
+    </form>
+</body>
+</html>
